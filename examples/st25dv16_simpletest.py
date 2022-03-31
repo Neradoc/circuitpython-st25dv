@@ -6,9 +6,8 @@ import rfid_payload
 eeprom = adafruit_st25dv16.ST25DV16(board.I2C(), 0x53)
 print(eeprom[:64])
 
-#data = rfid_payload.make_payload("https://www.circuitpython.org/downloads")
-data = rfid_payload.payload_url("http://ri1.fr")
-data = rfid_payload.payload_text("Hello World !")
+data = rfid_payload.make_payload("https://www.circuitpython.org/downloads")
+# data = rfid_payload.payload_text("Hello World !")
 
 print(data)
 
